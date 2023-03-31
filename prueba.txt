@@ -1,0 +1,20 @@
+Result:const names=require('./names')
+
+const hola = (name)=>{
+    console.log('Buenas tardes '+name)
+}
+
+
+hola(names.paco)
+const os = require('os')
+const user=os.userInfo()
+console.log('The system uptime is: '+os.uptime()+' seconds')
+
+const currentOS={
+    name: os.type(),
+    release: os.release(),
+    totalmem: os.totalmem(),
+    freemem: os.freemem(),
+}
+   
+console.log(currentOS)
